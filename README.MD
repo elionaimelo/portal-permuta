@@ -8,10 +8,6 @@ gulpjs [https://gulpjs.com/](https://gulpjs.com/)
 
 > **Gulp:** é uma ferramenta de automação de tarefas em JavaScript. Tarefas como minificar, otimizar e compilar arquivos, tão repetitivas e necessárias ao desenvolvimento, podem ser automatizadas com o Gulp. As tarefas do gulp são encontradas em gulpfile.js
 
-o arquivo .editorconfig apenas padroniza os estilos dos seus códigos seja em editor de texto ou IDE 
-
-Para o css será utlizado Sass, uma outra forma de escrever css. O gulp irá nos ajudar a minificar e concaternar o css para deixar a página mais leve, assim como também os scripts
-
 Para instalar o gulp, execute o seguinte comando:
 ```
 npm install --global gulp-cli
@@ -23,6 +19,15 @@ npm install
 ```
 
 Os arquivos vão estar divididos em partes para facilitar a manutenção. Com o comando gulp eles serão concatenados e colocados no diretório dist se tornando um único arquivo html
+
+O diretório **src** é responsável por tudo que está editável no projeto, ou seja, as imagens sem otimização, scripts q não estão concatenados e sass
+
+O diretório **dist** é o local que está tudo que foi otimizado, concatenado e etc.
+
+o arquivo .editorconfig apenas padroniza os estilos dos seus códigos seja em editor de texto ou IDE 
+
+Para o css será utlizado Sass, uma outra forma de escrever css. O gulp irá nos ajudar a minificar e concaternar o css para deixar a página mais leve, assim como também os scripts
+
 
 #### Alguns comandos para o projeto
 

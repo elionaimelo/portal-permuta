@@ -9,3 +9,6 @@
   background-position: center;
 }
 
+body:not(.login) {
+  background-color: #F3F6F9;
+}

@@ -9,16 +9,15 @@ const gulp = require("gulp"),
   uglify = require("gulp-uglify"),
   lodash = require("lodash"),
   browsersync = require("browser-sync"),
-  fileinclude = require("gulp-file-include")
-  autoprefixer = require('autoprefixer')
-  postcss = require('gulp-postcss');
+  fileinclude = require("gulp-file-include");
+  autoprefixer = require("autoprefixer");
+  postcss = require("gulp-postcss");
 
 const folder = {
   src: "src/", // aquivos fontes
   dist: "dist/", // arquivos finais
   dist_assets: "dist/assets/", //demais arquivos
 };
-
 
 /*
 Copiando arquivos da pasta dele no node_modules para o diretório js do projeto
@@ -29,12 +28,24 @@ function copyAssets(done) {
     js: [
       "./node_modules/jquery/dist/jquery.slim.js",
       "./node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+      "./node_modules/feather-icons/dist/feather.min.js",
     ],
   };
   //adicionar outras dependecias, ou seja, qlq outro jquery fora os padrões. Exemplo abaixo
   var third_party_assets = {
     css_js: [
-      // { "name": "custombox", "assets": ["./node_modules/custombox/dist/custombox.min.js", "./node_modules/custombox/dist/custombox.min.css"] },
+      {
+        name: "select2",
+        assets: [
+          "./node_modules/select2/dist/js/select2.min.js",
+          "./node_modules/select2/dist/css/select2.min.css",
+        ],
+        name: "form-cadastro",
+        assets: [
+          "./src/js/form.js",
+          // "./node_modules/select2/dist/css/select2.min.css",
+        ],
+      },
     ],
   };
 
@@ -45,7 +56,9 @@ function copyAssets(done) {
         var name = plugin["name"];
         var assetlist = plugin["assets"];
         lodash(assetlist).forEach(function (asset) {
-          gulp.src(asset).pipe(gulp.dest(folder.dist_assets + "libs/" + name));
+          gulp
+            .src(asset)
+            .pipe(gulp.dest(folder.dist_assets + "js/libs/" + name));
         });
       });
       //gulp.src(assets).pipe(gulp.dest(folder.dist_assets + "css/vendor"));
@@ -118,7 +131,7 @@ function css() {
   return gulp
     .src([folder.src + "/scss/app.scss"])
     .pipe(sourcemaps.init())
-    .pipe(sass()) 
+    .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest(folder.dist_assets + "css/"))
     .pipe(cleanCSS())
@@ -140,13 +153,13 @@ function javascript() {
     .src([
       folder.src + "js/vendor/jquery.js",
       folder.src + "js/vendor/bootstrap.bundle.js",
+      folder.src + "js/vendor/feather.min.js",
     ])
     .pipe(sourcemaps.init())
     .pipe(concat("vendor.js"))
     .pipe(gulp.dest(out))
     .pipe(
       rename({
-        // renomeando app.js para app.min.js
         suffix: ".min",
       })
     )
@@ -157,22 +170,20 @@ function javascript() {
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest(out));
 
-
   return gulp
-    .src([
-        folder.src + "js/app.js"
-    ])
+    .src([folder.src + "js/app.js"])
     .pipe(sourcemaps.init())
     .pipe(concat("app.js"))
     .pipe(gulp.dest(out))
     .pipe(
-        rename({
-            suffix: ".min"
-        })
+      rename({
+        // renomeando app.js para app.min.js
+        suffix: ".min",
+      })
     )
     .pipe(uglify())
     .on("error", function (err) {
-        console.log(err.toString());
+      console.log(err.toString());
     })
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest(out));
@@ -193,7 +204,7 @@ function reloadBrowserSync(done) {
   done();
 }
 
-// ouvindo todas as mudanças 
+// ouvindo todas as mudanças
 function watchFiles() {
   gulp.watch(folder.src + "html/**", gulp.series(html, reloadBrowserSync));
   gulp.watch(
