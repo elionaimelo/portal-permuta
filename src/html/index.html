@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome do projeto</title>
-     <!-- App css -->
-     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-     <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-  <div class="container">
-     <header id="header">
-        @@include('./partials/header.html')
-    </header>
-
- 
-    Conteúdo aqui
-   
-
-    <footer>
-      @@include('./partials/footer.html')
-    </footer>
-
-
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Portal permuta progesp</title>
+    <!-- App css -->
+    <link
+      href="assets/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row no-gutter">
+        <div class="col-md-4">
+          <div class="login d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 d-flex justify-content-center flex-column">
+                  <img src="assets/images/logo-ufrn-progesp.png" class="img-fluid d-block mx-auto mb-3" alt="">
+                  <img src="assets/images/logo-portal-permuta.png" class="img-fluid d-block mx-auto" alt="">
+                  <a href="cadastro.html" class="btn btn-primary btn-login mt-2 mx-auto">
+                    Login
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-md-flex col-md-8 bg-image"></div>
+      </div>
+    </div>
 
     <!-- Vendor js -->
     <script src="assets/js/vendor.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.min.js"></script>
-    
-
-</body>
+  </body>
 </html>
