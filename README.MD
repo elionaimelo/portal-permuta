@@ -1,8 +1,3 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=225px height=122px src="https://raw.githubusercontent.com/elionaimelo/portal-permuta/master/dist/assets/images/logo-portal-permuta.png?token=ABFGESLRDDCZ3F26UQV4K23AJNNEW" alt="Project logo"></a>
-</p>
----
 
 ## 📝 Table of Contents
 
