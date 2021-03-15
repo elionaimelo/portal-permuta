@@ -1,11 +1,16 @@
+.tamanho-peso {
+  font-weight: bold;
+}
+
 .btn-primary {
   background-color: $azulEscuro;
   border-color: $azulEscuro;
   border-radius: .5rem;
-  
+  @extend .tamanho-peso;
 }
 
 .btn-secondary {
+  @extend .tamanho-peso;
   background-color: $verdeClaro;
   border-color: $verdeClaro;
   padding: 0.8rem 2.25rem;
