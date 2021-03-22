@@ -23,3 +23,22 @@
   background-size:85px auto;
   padding: 1.25rem 7.8125rem 1.25rem 2rem;
 }
+
+.btn-custom1 {
+  background-color: $verdeMuitoClaro;
+  border-color: $verdeMuitoClaro;
+  color: $verdeClaro;
+  border-radius: .5rem;
+}
+.btn-custom2 {
+  @extend .btn-custom1;
+  background-color: $laranjaClaro2;
+  border-color: $laranjaClaro2;
+  color: $laranjaClaro;
+}
+.btn-custom3 {
+  @extend .btn-custom1;
+  background-color: $azulClaro;
+  border-color: $azulClaro;
+  color: $azulEscuro;
+}

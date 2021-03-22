@@ -7813,7 +7813,8 @@ a {
   transition: all 0.3s ease-in-out;
   color: #1BC5BD; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #e76f51; }
 
 .tamanho-peso, .btn-primary, .btn-secondary {
   font-weight: bold; }
@@ -7835,6 +7836,22 @@ a {
   background-size: 85px auto;
   padding: 1.25rem 7.8125rem 1.25rem 2rem; }
 
+.btn-custom1, .btn-custom2, .btn-custom3 {
+  background-color: #C9F7F5;
+  border-color: #C9F7F5;
+  color: #1BC5BD;
+  border-radius: .5rem; }
+
+.btn-custom2 {
+  background-color: #FCE0CA;
+  border-color: #FCE0CA;
+  color: #F6AD74; }
+
+.btn-custom3 {
+  background-color: #B5D2FB;
+  border-color: #B5D2FB;
+  color: #1D3557; }
+
 .breadcrumb-custom {
   background-color: transparent; }
   .breadcrumb-custom .breadcrumb-item + .breadcrumb-item::before {
@@ -7843,6 +7860,27 @@ a {
 .card {
   border-color: #FCE0CA;
   border-radius: .375rem; }
+  .card header h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #B5B5C3;
+    margin-bottom: 0; }
+  .card header p {
+    font-weight: bold; }
+  .card .card-body {
+    padding: 0; }
+    .card .card-body .tags-habilidade {
+      margin: 30px 0; }
+      .card .card-body .tags-habilidade div {
+        padding: 9px 18px;
+        border: 1px solid #F6AD74;
+        border-radius: 8px;
+        margin-bottom: 5px; }
+  .card footer button {
+    font-size: .80rem;
+    font-weight: 400; }
+    .card footer button:not(:last-of-type) {
+      margin-right: 5px; }
 
 .input-custom {
   background-color: #F3F6F9;
@@ -8027,6 +8065,38 @@ body {
       transition-delay: 0s;
       -webkit-transform: scale(1);
               transform: scale(1); }
+
+.sidebar .number-msgs {
+  border-radius: 40px;
+  background-color: #e76f51;
+  padding: 0px 6px;
+  color: #fff;
+  font-size: .9375rem;
+  left: 9px;
+  top: 8px;
+  font-weight: 300; }
+
+.sidebar .sub-menu {
+  margin-left: 18px; }
+  .sidebar .sub-menu a {
+    font-weight: 400; }
+
+.sidebar a {
+  font-weight: bold; }
+  .sidebar a.active {
+    background-color: #F3F6F9; }
+    .sidebar a.active svg path {
+      stroke: #1BC5BD; }
+  .sidebar a[data-toggle="collapse"] .seta-baixo:before {
+    content: url(../images/icon-feather-chevron-down.png);
+    position: absolute;
+    right: 14px; }
+  .sidebar a[data-toggle="collapse"].collapsed .seta-baixo:before {
+    content: url(../images/icon-feather-chevron-down.png);
+    position: absolute;
+    right: 14px; }
+  .sidebar a[aria-expanded="true"] .seta-baixo:before {
+    content: url(../images/icon-seta-cima.png); }
 
 #headerCadastro .nav-user {
   color: #3F4254; }
