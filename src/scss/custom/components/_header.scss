@@ -2,8 +2,16 @@
   .nav-user {
     color: $corTxt;
   }
+
+  .input-search {
+    background-color: $bg;
+  }
 }
 
 .border-header {
   border-bottom: 1px solid $laranjaClaro;
+}
+
+.logo {
+  max-width: 126px;
 }
