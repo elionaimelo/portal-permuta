@@ -17,175 +17,288 @@
 
     <div class="container">
         <div class="pt-5">
-            <div class="row">
-                <div class="col-lg-3 d-none d-md-block">
-                    <aside>
-                        <div class="card py-4 px-2">
-                            <nav class="nav flex-column">
-                                <a class="nav-link active" href="#">Página inicial</a>
-                                <a class="nav-link" href="#">Mensagens</a>
-                                <a
-                                    class="nav-link"
-                                    data-toggle="collapse"
-                                    href="#collapseExample"
-                                    role="button"
-                                    aria-expanded="false"
-                                    aria-controls="collapseExample"
-                                    >Minhas permutas</a
-                                >
-                                <div class="collapse" id="collapseExample">
-                                    <nav class="nav flex-column">
-                                    <a class="nav-link ml-3" href="#">Em andamento</a>
-                                    <a class="nav-link ml-3" href="#">Tenho interesse</a>
-                                    </nav>
-                                </div>
-                                <a class="nav-link" href="#">Perfil</a>
-                                <a class="nav-link" href="#">Entenda o processo</a>
-                            </nav>
-                        </div>
-                    </aside>
-                </div>
-                <!-- Div para sidebar -->
-                <div class="col-12 col-lg-9">
-                    <h2>Você pesquisou por: SINFO</h2>
-                    <div class="row">
-                    <!-- card que se repete -->
-                    <div class="col-lg-6 col-card mb-3">
-                        <section class="card">
-                        <header class="d-flex">
-                            <div>
-                            <img
-                                src="assets/images/logo-imd.png"
-                                class="img-fluid"
-                                alt=""
-                            />
-                            </div>
-                            <div>
-                            <h4>IMD (Instituto Metrópole Digital)</h4>
-                            <p>Mariya Takeuchi da Silva</p>
-                            </div>
-                        </header>
-                        <div class="card-body">
-                            <img
-                            src="assets/images/icon-check-cargo.png"
-                            class="img-fluid"
-                            alt=""
-                            />
-                        </div>
-                        </section>
-                    </div>
-                    <!-- fim do col-card -->
-                    <!-- card que se repete -->
-                    <div class="col-lg-6 col-card mb-3">
-                        <section class="card">
-                        <header class="d-flex">
-                            <div>
-                            <img
-                                src="assets/images/logo-imd.png"
-                                class="img-fluid"
-                                alt=""
-                            />
-                            </div>
-                            <div>
-                            <h4>IMD (Instituto Metrópole Digital)</h4>
-                            <p>Mariya Takeuchi da Silva</p>
-                            </div>
-                        </header>
-                        <div class="card-body">
-                            <img
-                            src="assets/images/icon-check-cargo.png"
-                            class="img-fluid"
-                            alt=""
-                            />
-                        </div>
-                        </section>
-                    </div>
-                    <!-- fim do col-card -->
-                    <!-- card que se repete -->
-                    <div class="col-lg-6 col-card mb-3">
-                        <section class="card">
-                        <header class="d-flex">
-                            <div>
-                            <img
-                                src="assets/images/logo-imd.png"
-                                class="img-fluid"
-                                alt=""
-                            />
-                            </div>
-                            <div>
-                            <h4>IMD (Instituto Metrópole Digital)</h4>
-                            <p>Mariya Takeuchi da Silva</p>
-                            </div>
-                        </header>
-                        <div class="card-body">
-                            <img
-                            src="assets/images/icon-check-cargo.png"
-                            class="img-fluid"
-                            alt=""
-                            />
-                        </div>
-                        </section>
-                    </div>
-                    <!-- fim do col-card -->
-                    <!-- card que se repete -->
-                    <div class="col-lg-6 col-card mb-3">
-                        <section class="card">
-                        <header class="d-flex">
-                            <div>
-                            <img
-                                src="assets/images/logo-imd.png"
-                                class="img-fluid"
-                                alt=""
-                            />
-                            </div>
-                            <div>
-                            <h4>IMD (Instituto Metrópole Digital)</h4>
-                            <p>Mariya Takeuchi da Silva</p>
-                            </div>
-                        </header>
-                        <div class="card-body">
-                            <img
-                            src="assets/images/icon-check-cargo.png"
-                            class="img-fluid"
-                            alt=""
-                            />
-                        </div>
-                        </section>
-                    </div>
-                    <!-- fim do col-card -->
-                    <!-- card que se repete -->
-                    <div class="col-lg-6 col-card mb-3">
-                        <section class="card">
-                        <header class="d-flex">
-                            <div>
-                            <img
-                                src="assets/images/logo-imd.png"
-                                class="img-fluid"
-                                alt=""
-                            />
-                            </div>
-                            <div>
-                            <h4>IMD (Instituto Metrópole Digital)</h4>
-                            <p>Mariya Takeuchi da Silva</p>
-                            </div>
-                        </header>
-                        <div class="card-body">
-                            <img
-                            src="assets/images/icon-check-cargo.png"
-                            class="img-fluid"
-                            alt=""
-                            />
-                        </div>
-                        </section>
-                    </div>
-                    <!-- fim do col-card -->
-
-                    </div>
-                </div>
-                <!-- area dos cards -->
+          <div class="row">
+            <div class="col-lg-3 d-none d-md-block">
+              @@include('./partials/sidebar.html')
             </div>
+            <!-- Div para sidebar -->
+            <div class="col-12 col-lg-9">
+                <div class="titulo-pesquisa pt-2 pb-2">
+                    <h2>Você pesquisou por: SINFO</h2>
+                </div>
+                <div class="row mx-lg-n4">
+                <!-- card que se repete -->
+                <div class="col-lg-6 mb-3 px-1">
+                  <section class="card">
+                    <header class="d-flex pt-4 pl-4 pr-3 pb-2">
+                      <div class="mr-2">
+                        <img
+                          src="assets/images/logo-imd.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h4>IMD (Instituto Metrópole Digital)</h4>
+                        <p>Mariya Takeuchi da Silva</p>
+                      </div>
+                    </header>
+                    <div class="card-body pl-4 pr-4">
+                      <div class="mb-2">
+                        <img
+                          src="assets/images/icon-check-cargo.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <span>Cargo: Administrador</span>
+                      </div>
+                      <div class="mb-2">
+                        <img
+                          src="assets/images/icon-check-cargo.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <span>Nível: Superior</span>
+                      </div>
+                      <div class="tags-habilidade">
+                        <div class="d-inline-block">Gestão de projetos</div>
+                        <div class="d-inline-block">Administração</div>
+                        <div class="d-inline-block">Logística</div>
+                      </div>
+                      <div class="resumo-cargo">
+                        <article>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sed sit amet massa tincidunt, tempor lacus eget,
+                            luctus quam. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nullam egestas finibus nunc.
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                    <footer class="border d-flex px-3 py-3">
+                      <button type="button" class="btn btn-custom1 flex-fill">
+                        <img src="assets/images/icone-tenho-interesse.png" class="d-block mx-auto" alt="">
+                        Tenho interesse
+                      </button>
+                      <button type="button" class="btn btn-custom2 flex-fill">
+                        <img src="assets/images/icone-mais-detalhes.png" class="d-block mx-auto" alt="">
+                        Mais detalhes
+                      </button>
+                      <button type="button" class="btn btn-custom3 flex-fill">
+                        <img src="assets/images/icone-compartilhar.png" class="d-block mx-auto" alt="">
+                        Compartilhar
+                      </button>
+                    </footer>
+                  </section>
+                </div>
+                <!-- fim do card -->
+                <!-- card que se repete -->
+                <div class="col-lg-6 mb-3 px-1">
+                  <section class="card">
+                    <header class="d-flex pt-4 pl-4 pr-3 pb-2">
+                      <div class="mr-2">
+                        <img
+                          src="assets/images/logo-imd.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h4>IMD (Instituto Metrópole Digital)</h4>
+                        <p>Mariya Takeuchi da Silva</p>
+                      </div>
+                    </header>
+                    <div class="card-body pl-4 pr-4">
+                      <div class="mb-2">
+                        <img
+                          src="assets/images/icon-check-cargo.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <span>Cargo: Administrador</span>
+                      </div>
+                      <div class="mb-2">
+                        <img
+                          src="assets/images/icon-check-cargo.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <span>Nível: Superior</span>
+                      </div>
+                      <div class="tags-habilidade">
+                        <div class="d-inline-block">Gestão de projetos</div>
+                        <div class="d-inline-block">Administração</div>
+                        <div class="d-inline-block">Logística</div>
+                      </div>
+                      <div class="resumo-cargo">
+                        <article>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sed sit amet massa tincidunt, tempor lacus eget,
+                            luctus quam. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nullam egestas finibus nunc.
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                    <footer class="border d-flex px-3 py-3">
+                      <button type="button" class="btn btn-custom1 flex-fill">
+                        <img src="assets/images/icone-tenho-interesse.png" class="d-block mx-auto" alt="">
+                        Tenho interesse
+                      </button>
+                      <button type="button" class="btn btn-custom2 flex-fill">
+                        <img src="assets/images/icone-mais-detalhes.png" class="d-block mx-auto" alt="">
+                        Mais detalhes
+                      </button>
+                      <button type="button" class="btn btn-custom3 flex-fill">
+                        <img src="assets/images/icone-compartilhar.png" class="d-block mx-auto" alt="">
+                        Compartilhar
+                      </button>
+                    </footer>
+                  </section>
+                </div>
+                <!-- fim do card -->
+                <!-- card que se repete -->
+                <div class="col-lg-6 mb-3 px-1">
+                  <section class="card">
+                    <header class="d-flex pt-4 pl-4 pr-3 pb-2">
+                      <div class="mr-2">
+                        <img
+                          src="assets/images/logo-imd.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h4>IMD (Instituto Metrópole Digital)</h4>
+                        <p>Mariya Takeuchi da Silva</p>
+                      </div>
+                    </header>
+                    <div class="card-body pl-4 pr-4">
+                      <div class="mb-2">
+                        <img
+                          src="assets/images/icon-check-cargo.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <span>Cargo: Administrador</span>
+                      </div>
+                      <div class="mb-2">
+                        <img
+                          src="assets/images/icon-check-cargo.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <span>Nível: Superior</span>
+                      </div>
+                      <div class="tags-habilidade">
+                        <div class="d-inline-block">Gestão de projetos</div>
+                        <div class="d-inline-block">Administração</div>
+                        <div class="d-inline-block">Logística</div>
+                      </div>
+                      <div class="resumo-cargo">
+                        <article>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sed sit amet massa tincidunt, tempor lacus eget,
+                            luctus quam. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nullam egestas finibus nunc.
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                    <footer class="border d-flex px-3 py-3">
+                      <button type="button" class="btn btn-custom1 flex-fill">
+                        <img src="assets/images/icone-tenho-interesse.png" class="d-block mx-auto" alt="">
+                        Tenho interesse
+                      </button>
+                      <button type="button" class="btn btn-custom2 flex-fill">
+                        <img src="assets/images/icone-mais-detalhes.png" class="d-block mx-auto" alt="">
+                        Mais detalhes
+                      </button>
+                      <button type="button" class="btn btn-custom3 flex-fill">
+                        <img src="assets/images/icone-compartilhar.png" class="d-block mx-auto" alt="">
+                        Compartilhar
+                      </button>
+                    </footer>
+                  </section>
+                </div>
+                <!-- fim do card -->
+                <!-- card que se repete -->
+                <div class="col-lg-6 mb-3 px-1">
+                  <section class="card">
+                    <header class="d-flex pt-4 pl-4 pr-3 pb-2">
+                      <div class="mr-2">
+                        <img
+                          src="assets/images/logo-imd.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h4>IMD (Instituto Metrópole Digital)</h4>
+                        <p>Mariya Takeuchi da Silva</p>
+                      </div>
+                    </header>
+                    <div class="card-body pl-4 pr-4">
+                      <div class="mb-2">
+                        <img
+                          src="assets/images/icon-check-cargo.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <span>Cargo: Administrador</span>
+                      </div>
+                      <div class="mb-2">
+                        <img
+                          src="assets/images/icon-check-cargo.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <span>Nível: Superior</span>
+                      </div>
+                      <div class="tags-habilidade">
+                        <div class="d-inline-block">Gestão de projetos</div>
+                        <div class="d-inline-block">Administração</div>
+                        <div class="d-inline-block">Logística</div>
+                      </div>
+                      <div class="resumo-cargo">
+                        <article>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sed sit amet massa tincidunt, tempor lacus eget,
+                            luctus quam. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Nullam egestas finibus nunc.
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                    <footer class="border d-flex px-3 py-3">
+                      <button type="button" class="btn btn-custom1 flex-fill">
+                        <img src="assets/images/icone-tenho-interesse.png" class="d-block mx-auto" alt="">
+                        Tenho interesse
+                      </button>
+                      <button type="button" class="btn btn-custom2 flex-fill">
+                        <img src="assets/images/icone-mais-detalhes.png" class="d-block mx-auto" alt="">
+                        Mais detalhes
+                      </button>
+                      <button type="button" class="btn btn-custom3 flex-fill">
+                        <img src="assets/images/icone-compartilhar.png" class="d-block mx-auto" alt="">
+                        Compartilhar
+                      </button>
+                    </footer>
+                  </section>
+                </div>
+                <!-- fim do card -->
+               
+              </div>
+            </div>
+            <!-- area dos cards -->
+          </div>
         </div>
-    </div>
-    @@include('./partials/footer.html')
+      </div>
+      @@include('./partials/footer.html')
     </body>
-</html>
+  </html>
+  

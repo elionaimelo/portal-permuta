@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tags de habilidade | Portal permuta progesp</title>
+  <!-- App css -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  @@include('./partials/headerCadastro.html')
+
+
+  <div class="container">
+    <div class="pt-5">
+      <div class="row">
+        <div class="col-lg-3 d-none d-md-block">
+          <aside>
+            <div class="card py-4 px-2">
+              <nav class="nav flex-column">
+                <a class="nav-link active" href="#">Página inicial</a>
+                <a class="nav-link" href="#">Mensagens</a>
+                <a class="nav-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                  aria-controls="collapseExample">Minhas permutas</a>
+                <div class="collapse" id="collapseExample">
+                  <nav class="nav flex-column">
+                    <a class="nav-link ml-3" href="#">Em andamento</a>
+                    <a class="nav-link ml-3" href="#">Tenho interesse</a>
+                  </nav>
+                </div>
+                <a class="nav-link" href="#">Perfil</a>
+                <a class="nav-link" href="#">Entenda o processo</a>
+              </nav>
+            </div>
+          </aside>
+        </div>
+
+        <div class="col-12 col-lg-9">
+          <div class="row">
+            <div class="col-lg-4  d-none d-md-block">
+              <h4><b>Tags de habilidade</b></h4>
+            </div>
+          </div>
+          <div class="pt-4"></div>
+          <div class="col-md-15 d-flex">
+          
+
+            <div class="card">
+              <div class="card-body">
+                
+                
+                <p class="card-text">Abaixo estão as informações nas quais você inseriu no início do cadastro.</p>
+                <button type="button" class="btn btn-outline-primary">Administração</button>
+                <button type="button" class="btn btn-outline-primary">Frontend</button>
+                <button type="button" class="btn btn-outline-primary">Logística</button>
+                <button type="button" class="btn btn-outline-primary">Programação</button>
+               
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  @@include('./partials/footer.html')
+</body>
+
+</html>
