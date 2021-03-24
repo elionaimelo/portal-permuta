@@ -32,7 +32,7 @@
 
   footer {
     border-top: 1px solid $laranjaClaro2;
-    button {
+    button , a {
       font-size: .80rem;
       font-weight: 400;
       &:not(:last-of-type) {

@@ -66,6 +66,7 @@
   background-color: $laranjaClaro2;
   border-color: $laranjaClaro2;
   color: $laranjaClaro;
+  margin-right: 5px;
 
   .icon {
     display: inline-block;
@@ -128,5 +129,37 @@
   &:hover {
     background-color: $laranjaClaro;
     border-color: $laranjaClaro;
+  }
+}
+
+.btn-entrar-contato {
+  @extend .btn-custom1;
+  background-color: $azulEscuro;
+  border-color: $azulEscuro;
+  color: white;
+  font-size: 1rem !important;
+
+  .icon {
+    display: inline-block;
+    margin-bottom: -10px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    mask-size: cover;
+  }
+
+  .icon-entrar-contato {
+    mask: url(../images/icone-entrar-contato.svg);
+    mask-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: $azulClaro;
+    border-color: $azulClaro;
+    color: $azulEscuro;
+
+    .icon {
+      background-color: $azulEscuro;
+    }
   }
 }
