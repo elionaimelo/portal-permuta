@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Permutas em andamento | Portal permuta progesp</title>
+    <!-- App css -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    @@include('./partials/favicons.html')
+  </head>
+  <body>
+    @@include('./partials/header.html')
+
+    <div class="container pt-5 pt-md-5">
+      <div class="pt-5 mt-3 mt-md-0">
+        <div class="row pt-5 pt-md-4">
+          <div class="col-lg-3 d-none d-md-block">
+            @@include('./partials/sidebar.html')
+          </div>
+          <!-- Div para sidebar -->
+          <div class="col-12 col-lg-9">
+            <div class="row mx-lg-n4">
+              <!-- card das permutas -->
+              <div class="col-lg-12 mb-3 px-1">
+                <h3 class="text-center text-md-left titulo mb-1">Em andamento:</h3>            
+              </div>
+            </div>
+            <div class="row mx-lg-n4">
+               <!-- card de questionário das permutas -->
+               <div class="col-lg-12 mb-3 px-1">
+                   <section class="card">
+                       <header class="d-flex pt-4 pl-4 pr-3 pb-2">
+                           <div class="mr-2">
+                               <img src="assets/images/icone-questionario.png" class="img-fluid" alt="">
+                           </div>
+                           <div class="em-andamento">
+                                <h4>Questionário de permuta</h4>
+                                <p>Gostaríamos de saber mais sobre os motivos que levaram você a optar pela permuta. O questionário é anônimo,  as respostas coletadas não serão associadas a você.</p>
+                                <button type="button" class="btn btn-clear btn-inline-block mt-2">Abrir questionário</button>
+                            </div>
+                       </header>
+                   </section>
+               </div>
+               
+            </div>
+          </div>
+          <!-- area dos cards -->
+        </div>
+      </div>
+    </div>
+    @@include('./partials/footer.html')
+  </body>
+</html>
