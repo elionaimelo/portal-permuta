@@ -303,10 +303,23 @@ $btn-circle-decor-dimensions: 13px;
     border-radius: 30px;
     border-width: 2px;
     border-color: $azulEscuro;
+    width: 17px;
+    height: 17px;
   }
 
   .custom-control-input:checked~.custom-control-label::before {
     border-color: $azulEscuro;
-    background-color: $azulEscuro;
+    background-color: transparent;
   }
+  
+  .custom-control-input:checked~.custom-control-label::after {
+    background-image: url(../images/icone-checked.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60% 54%;
+  }
+}
+
+.fill {
+  background-color: $laranjaClaro;
 }

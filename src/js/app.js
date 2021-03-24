@@ -86,7 +86,12 @@ $(".submit").click(function(){
 $(".btn-clear").on('click', function() {
     $(".custom-checkbox input:checkbox").prop('checked', false);
     $(".custom-checkbox input:checkbox").closest("label").removeClass("active");
+    $(".custom-checkbox input:checkbox").parent().removeClass("fill");
 })
+
+$(":checkbox").on('click', function(){
+  $(this).parent().toggleClass("fill");
+});
 
 var mybutton = document.getElementById("totop");
 window.onscroll = function() {scrollFunction()};
