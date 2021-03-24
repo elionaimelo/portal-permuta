@@ -81,3 +81,9 @@ $(".submit").click(function(){
 	return false;
 })
 
+3
+
+$(".btn-clear").on('click', function() {
+    $(".custom-checkbox input:checkbox").prop('checked', false);
+    $(".custom-checkbox input:checkbox").closest("label").removeClass("active");
+})

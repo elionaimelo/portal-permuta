@@ -7,6 +7,11 @@
   border-color:$laranjaClaro;
   border-radius: .5rem;
   @extend .tamanho-peso;
+
+  &:hover {
+    background-color: $verdeClaro;
+    border-color: $verdeClaro;
+  }
 }
 
 .btn-secondary {
@@ -43,4 +48,15 @@
   background-color: $azulClaro;
   border-color: $azulClaro;
   color: $azulEscuro;
+}
+
+.btn-clear {
+  background-color: $verdeClaro;
+  border-color: $verdeClaro;
+  color: white;
+
+  &:hover {
+    background-color: $laranjaClaro;
+    border-color: $laranjaClaro;
+  }
 }

@@ -292,3 +292,21 @@ $btn-circle-decor-dimensions: 13px;
     }
   }
 }
+
+
+.custom-checkbox {
+  border: 1px solid $laranjaClaro2;
+  padding: 8px 18px 8px 35px;
+  border-radius: 8px;
+
+  .custom-control-label::before {
+    border-radius: 30px;
+    border-width: 2px;
+    border-color: $azulEscuro;
+  }
+
+  .custom-control-input:checked~.custom-control-label::before {
+    border-color: $azulEscuro;
+    background-color: $azulEscuro;
+  }
+}
