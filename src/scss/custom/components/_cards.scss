@@ -52,7 +52,34 @@
     }
     
   }
+  .busca-anexo {
+    background-color: $bg2;
+    border-radius: .375rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
+    p {
+      margin-bottom: 0 !important;
+      padding-left: 1rem;
+    }
+  }
+  .tabela-anexo {
+    border-radius: .375rem;
+    border: 1px solid $laranjaClaro2;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: $azulEscuro;
+
+    tr:nth-child(2n) {
+      background-color: $bg2;
+    }
+
+    td {
+      padding: 0.75rem;
+      vertical-align: top;
+    }
+  }
   .em-andamento {
     padding-left: 1rem;
      h4 {
