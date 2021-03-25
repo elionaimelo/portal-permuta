@@ -28,6 +28,24 @@
         margin-bottom: 5px;
       }
     }
+    .checado {
+      background-color: $laranjaClaro3;
+      border-radius: .375rem;
+      padding: 8px 18px;
+
+      label {
+        margin-bottom: 0;
+      }
+    }
+    .nao-checado {
+      border-radius: .375rem;
+      border: 1px solid $laranjaClaro3;
+      padding: 8px 18px;
+
+      label {
+        margin-bottom: 0;
+      }
+    }
 
   }
   .card-permuta {
@@ -80,20 +98,7 @@
       vertical-align: top;
     }
   }
-  .em-andamento {
-    padding-left: 1rem;
-     h4 {
-      font-size: 1.125rem;
-      font-weight: bold;
-      color: $azulEscuro;
-      margin-bottom: 0.5rem;
-    }
-    p{
-      font-size: 1rem;
-      font-weight: normal;
-      color: $azulEscuro;
-    }
-  }
+  
 
   footer {
     border-top: 1px solid $laranjaClaro2;
@@ -105,4 +110,24 @@
       }
     }
   }
+}
+.card.em-andamento {
+
+  header{
+    h4 {
+      font-size: 1.125rem;
+      font-weight: bold;
+      color: $azulEscuro;
+      margin-bottom: 0.5rem;
+      padding-left: 2rem;
+    }
+  }
+
+     
+    p{
+      font-size: 1rem;
+      font-weight: normal;
+      color: $azulEscuro;
+    }
+    
 }
