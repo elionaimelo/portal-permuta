@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Permutas em andamento | Portal permuta progesp</title>
+    <!-- App css -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    @@include('./partials/favicons.html')
+  </head>
+  <body>
+    @@include('./partials/header.html')
+
+    <div class="container pt-5 pt-md-5">
+      <div class="pt-5 mt-3 mt-md-0">
+        <div class="row pt-5 pt-md-4">
+          <div class="col-lg-3 d-none d-md-block">
+            @@include('./partials/sidebar.html')
+          </div>
+          <!-- Div para sidebar -->
+          <div class="col-12 col-lg-9">
+            <div class="row mx-lg-n4">
+              <!-- card das permutas -->
+              <div class="col-lg-12 mb-3 px-1">
+                <h3 class="text-center text-md-left titulo mb-1">
+                  Em andamento:
+                </h3>
+              </div>
+            </div>
+            <div class="row mx-lg-n4">
+              <!-- card de questionário das permutas -->
+              <div class="col-lg-12 mb-3 px-1">
+                <section class="card em-andamento px-4 pb-4">
+                  <div class="d-flex flex-column flex-md-row">
+                    <img
+                      src="assets/images/icone-questionario.png"
+                      class="img-fluid align-self-baseline d-block d-md-inline my-4 mx-auto"
+                      alt=""
+                    />
+                    <div class="pl-md-4">
+                      <header class="pt-md-4">
+                        <h4 class="text-center text-md-left">Questionário de permuta</h4>
+                      </header>
+                      <div class="card-body">
+                        <p>
+                          Gostaríamos de saber mais sobre os motivos que levaram
+                          você a optar pela permuta. O questionário é anônimo,
+                          as respostas coletadas não serão associadas a você.
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-clear d-block d-md-inline-block mt-2"
+                        >
+                          Abrir questionário
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!-- fim do card de questionario das permutas -->
+              <!-- card de acompanhamentos -->
+              <div class="col-lg-12 mb-3 px-1">
+                <section class="card em-andamento px-4 pb-3">
+                  <div class="d-flex flex-column flex-md-row">
+                    <img
+                        src="assets/images/icon-acompanhamento.png"
+                        class="img-fluid align-self-baseline d-block d-md-inline my-4 mx-auto"
+                        alt=""
+                      />
+                      <div class="pl-md-4">
+                        <header class="pt-md-4">
+                          <h4 class="text-center text-md-left">Acompanhamento</h4>
+                        </header>
+                        <div class="card-body pt-3 pr-3">
+                          <div class="d-inline-block checado">
+                            <img src="assets/images/icon-checked.png" alt="" />
+                            <label class="text-uppercase">Etapa 1</label>
+                          </div>
+                          <div class="d-inline-block mb-2 nao-checado">
+                            <img src="assets/images/icon-not-checked.png" alt="" />
+                            <label class="text-uppercase">Etapa 2</label>
+                          </div>
+                          <div class="d-inline-block mb-2 nao-checado">
+                            <img src="assets/images/icon-not-checked.png" alt="" />
+                            <label class="text-uppercase">Etapa 3</label>
+                          </div>
+                          <div class="d-inline-block mb-2 nao-checado">
+                            <img src="assets/images/icon-not-checked.png" alt="" />
+                            <label class="text-uppercase">Etapa 4</label>
+                          </div>
+                          <p class="pt-2">
+                            Etapa 1: Envio de documentações, preenchimento de
+                            formulários e comunicação com as partes interessadas.
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </section>
+              </div>
+              <!-- fim do card de acompanhamentos -->
+              <!-- card de permutas -->
+              <div class="col-lg-12 mb-3 px-1">
+                <section class="card em-andamento  px-4 pb-4">
+                  <div class="d-flex flex-column flex-md-row">
+                    <img
+                      src="assets/images/icon-permuta.png"
+                      class="img-fluid align-self-baseline d-block d-md-inline my-4 mx-auto mx-md-0"
+                      alt=""
+                    />
+                    <div class="pl-md-4 col-lg-9">
+                      <header class="pt-md-4">
+                        <h4 class="text-center text-md-left">Permutas</h4>
+                      </header>
+                      <div class="card-body card-permuta">
+                        <div class="m-2 p-2 d-flex flex-row align-items-center justify-content-around permuta-1">
+                          <div class="mr-4 ml-2">
+                            <img
+                              src="assets/images/imgPerfil2.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </div>
+                          <h4>Você</h4>
+                          <div class="mr-2 ml-4">
+                            <img
+                              src="assets/images/logo-imd.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </div>
+                        </div>
+                        <img
+                          src="assets/images/icon-permuta-2.png"
+                          alt=""
+                          class="img-fluid m-2"
+                        />
+                        <div
+                          class="m-2 p-2 d-flex flex-row align-items-center justify-content-around permuta-2"
+                        >
+                          <div class="mr-4 ml-2">
+                            <img
+                              src="assets/images/imgPerfil3.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </div>
+                          <h4>Outro usuário</h4>
+                          <div class="mr-2 ml-4">
+                            <img
+                              src="assets/images/logo-sedis.png"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!-- fim do card de permutas -->
+              <!-- card de anexos -->
+              <div class="col-lg-12 mb-3 px-1">
+                <section class="card em-andamento  px-4 pb-4">
+                  <div class="d-flex flex-column flex-md-row">
+                    <img
+                        src="assets/images/icon-anexos.png"
+                        class="img-fluid align-self-baseline d-block d-md-inline my-4 mx-auto mx-md-0"
+                        alt=""
+                      />
+                      <div class="pl-md-4 w-100">
+                        <header class="pt-md-4">
+                          <h4 class="text-center text-md-left">Anexos</h4>
+                        </header>
+                        <div class="card-body pr-3">
+                          <div class="pt-2 pb-3 col-lg-6">
+                            <p>Nome do documento</p>
+                            <div class="busca-anexo">
+                              <img
+                                src="assets/images/icon-lupa.png"
+                                alt=""
+                                class="img-fluid p-2"
+                              />
+                              <p>Digite algo para buscar</p>
+                            </div>
+                          </div>
+                          <div class="table-responsive">
+                            <table class="tabela-anexo">
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>DOCUMENTO</td>
+                                  <td>15/12/2020</td>
+                                  <td>DDP</td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>DOCUMENTO</td>
+                                  <td>15/12/2020</td>
+                                  <td>Você</td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>DOCUMENTO</td>
+                                  <td>15/12/2020</td>
+                                  <td>DDP</td>
+                                </tr>
+                                <tr>
+                                  <td>4</td>
+                                  <td>DOCUMENTO</td>
+                                  <td>15/12/2020</td>
+                                  <td>Você</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="pt-2 d-flex flex-row justify-content-md-end">
+                            <nav aria-label="Paginação">
+                              <ul class="pagination mb-5">
+                                <!-- desabilitado removendo disabled o ativa -->
+                                <li class="page-item disabled">
+                                  <a class="page-link border-0" href="#">
+                                    <img
+                                      src="assets/images/icone-anterior.png"
+                                      alt=""
+                                    />
+                                    Anterior</a
+                                  >
+                                </li>
+                                <li class="page-item active d-none d-md-inline">
+                                  <a class="page-link border-0" href="#">1</a>
+                                </li>
+                                <li class="page-item d-none d-md-inline">
+                                  <a class="page-link border-0" href="#">2</a>
+                                </li>
+                                <li class="page-item d-none d-md-inline">
+                                  <a class="page-link border-0" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link border-0" href="#">
+                                    Próxima
+                                    <img
+                                      src="assets/images/icone-proxima.png"
+                                      alt=""
+                                      srcset=""
+                                  /></a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </section>
+              </div>
+              <!-- fim do card de anexos -->
+            </div>
+          </div>
+          <!-- area dos cards -->
+        </div>
+      </div>
+    </div>
+    @@include('./partials/footer.html')
+  </body>
+</html>
