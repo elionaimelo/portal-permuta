@@ -1,6 +1,7 @@
 .card {
   border-color: $laranjaClaro2;
   border-radius: .375rem;
+  
 
   header {
     h4 {
@@ -17,17 +18,26 @@
 
   .card-body {
     padding: 0;
+    
 
-    .tags-habilidade {
-      margin: 30px 0;
-
+    .alterardados {
+      padding: 30px;
+      
+      input[type=text] ,
+      input[type=date] {
+        padding: 25px 25px;
+      }
       div {
         padding: 9px 18px;
         border: 1px solid $laranjaClaro;
         border-radius: 8px;
         margin-bottom: 5px;
+        
       }
     }
+
+    
+    
   }
 
   footer {
@@ -40,4 +50,4 @@
       }
     }
   }
-}
+} 
