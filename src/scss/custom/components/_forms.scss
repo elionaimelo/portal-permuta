@@ -323,3 +323,14 @@ $btn-circle-decor-dimensions: 13px;
 .fill {
   background-color: $laranjaClaro;
 }
+
+.disabled:disabled {
+  color: $azulEscuro;
+  background-color: $botaoDesabilitado;
+  opacity: 1;
+  border-color: $laranjaClaro2;
+}
+
+.addHabilidade {
+  border-color: $laranjaClaro2; 
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alterar dados | Portal permuta progesp</title>
+  <!-- App css -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+  @@include('./partials/favicons.html')
+</head>
+
+<body>
+  @@include('./partials/header.html')
+
+  <div class="container pt-5 pt-md-5">
+    <div class="pt-5 mt-3 mt-md-0">
+      <div class="row pt-5 pt-md-4">
+        <div class="col-lg-3 d-none d-lg-block">
+          @@include('./partials/sidebar.html')
+        </div>
+        <!-- Div para sidebar -->
+
+        <div class="col-12 col-lg-9">
+          <div class="row mx-lg-n4">
+            <div class="col-lg-12 mb-3 px-1">
+              <h3 class="text-center text-md-left titulo mb-1">Dados</h3>
+            </div>
+          </div>
+          <div class="row mx-lg-n4">
+            <div class="col-lg-12 mb-3 px-1">
+              <div class="card">
+                <div class="card-body">
+                  <div class="alterardados">
+                    <form>
+                      <label for="inlineFormInput">Imagem</label>
+
+                      <p><img src="assets/images/imgAlterarDados.png" class="imgAlterarDados" alt="">
+                        <button type="submit" class="btn btn-alterardados">Alterar</button>
+                      
+                      <p><label for="inlineFormInput">Nome</label>
+                        <input disabled type="text" class="form-control mb-2 disabled" id="inlineFormInput"
+                          placeholder="Fulano">
+
+                        <label for="inlineFormInput">Data de nascimento</label>
+                        <input disabled type="date" id="inlineFormInput" class="form-control mb-2 disabled"
+                          placeholder="dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off">
+
+                        <label for="inlineFormInput">CPF</label>
+                        <input disabled type="text" class="form-control mb-2 disabled cpf-mask"
+                          placeholder="000.000.000-00" data-mask="999.999.999-99" maxlength="11">
+
+                    </form>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-12 mb-3 px-1">
+              <div class="card">
+                <div class="card-body">
+                  <div class="alterardados">
+
+                    <p><label for="inlineFormInput">Abaixo estão as informações nas quais você inseriu no início do
+                        cadastro:</label></p>
+                    <p>
+                      <button type="button" class="btn btn-custom4 d-block d-md-inline-block mb-1 mb-md-0">
+                        Administração
+                        <span class="icon icon-remove"></span>
+                      </button>
+                      <button type="button" class="btn btn-custom4 d-block d-md-inline-block mb-1 mb-md-0">
+                        Frontend
+                        <span class="icon icon-remove"></span>
+                      </button>
+                      <button type="button" class="btn btn-custom4 d-block d-md-inline-block mb-1 mb-md-0">
+                        Logística
+                        <span class="icon icon-remove"></span>
+                      </button>
+                      <button type="button" class="btn btn-custom4 d-block d-md-inline-block mb-1 mb-md-0">
+                        Programação
+                        <span class="icon icon-remove"></span>
+                      </button>
+                    </p>
+
+                    <!-- Botão para acionar modal -->
+                    <button type="submit" class="btn btn-alterardados mt-2" data-toggle="modal"
+                      data-target="#modalExemplo">
+                      Adicionar
+                      <span class="icon icon-addHabilidade"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                
+                <div class="modal-content">
+                  <div class="modal-headerCustom">
+                    <h5 class="modal-title"><b>Adicionar tags de habilidades</h5></b>
+                    <div class="iconFechar" data-dismiss="modal" aria-label="Fechar">
+                      <span class="icon icon-remove"></span>                     
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <small label for="inlineFormInput">Tag de habilidade</label>
+                    <form>
+                      <div class="form-group  mb-0">
+                       
+                        <input type="text" class=" addHabilidade form-control" id="exampleInputEmail1" autocomplete="additional-name">
+                      
+                      </div>
+                      </form>
+                  </div>
+                  <div class="modal-footerCustom">
+                    <button type="submit" class="btn btn-salvar">Salvar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-12 mb-3 px-1">
+              <button type="submit" class="btn btn-salvar">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  @@include('./partials/footer.html')
+</body>
+
+</html>
