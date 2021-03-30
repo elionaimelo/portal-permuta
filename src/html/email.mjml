@@ -1,0 +1,26 @@
+<mjml>
+    <mj-head>
+        <!-- This tag allows you to set the preview that will be displayed in the inbox of the recipient. -->
+        <mj-preview>Hello MJML</mj-preview>
+        <!-- Defines the document's title that browsers show in the title bar or a page's tab. -->
+        <mj-title>Hello MJML</mj-title>
+    </mj-head>
+    <mj-body>
+      <mj-section full-width="full-width" background-color="#FFFFFF">
+        <mj-column>
+          <mj-image width="100px" src="/assets/img/logo-small.png"></mj-image>
+        </mj-column>
+      </mj-section>
+      <mj-section full-width="full-width" background-color="#F3F6F9">
+        <mj-column width="100%">
+          <mj-text font-size="16px" color="#3F4254" font-family="poppins">Olá, <b>Servidor</b></mj-text>
+          <mj-text font-size="16px" color="#3F4254" font-family="poppins"><b>Seja bem vindo ao portal permuta.</b> Nele você poderá <b>interagir</b> com <b>outros servidores</b> de toda a UFRN que também desejam uma movimentação interna por meio da remoção por <b>permuta a qual é regulamentada pela Resolução nº 056/2018 – CONSAD.</b><br /><br /> Mas é importante saber que este portal é um <b>facilitador da interação</b> entre aqueles desejam permutar, mas <b>não formaliza o processo de permuta</b>, o mesmo deve seguir os critérios previstos na Resolução, dentre eles:<br /><br /> - Não estar respondendo a processo administrativo disciplinar ou sindicância<br /> - Possuir avaliação de desempenho cadastrada no sistema SIGRH - Possuir tempo de efetivo exercício na unidade de lotação:<br /> - 18 meses para a primeira remoção;<br /> - 12 meses para as demais remoções.<br /><br /> <b>Em caso de duvidas</b> referente às etapas do processo você poderá entrar em contato com a Divisão de Planejamento de Gestão de Pessoas – DPGP, setor responsável pelas movimentações internas de pessoal técnico administrativo, pelos canais: <br /><br />Telefone: 3342-2235 – 204|205|206 <br />WhatsApp: (84) 99193-6299 <br />E-mail: cpgp@reitoria.ufrn.br</mj-text>
+          <mj-button href="#" background-color="#1BC5BD" border-radius="0px" font-family="poppins" inner-padding="15px 50px" align="left" font-size="16px">Ir para o portal</mj-button>
+        </mj-column>
+      </mj-section>
+    </mj-body>
+  </mjml>
+
+  <!-- When using the mjml command line, you can add the option -c.validationLevel or 
+    --config.validationLevel with the validation level you want.
+    Alternatively, you can just validate file without rendering it by add ing the --validate option  -->
