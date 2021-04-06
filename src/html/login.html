@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login DDP | Portal permuta progesp</title>
+    <!-- App css -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    @@include('./partials/favicons.html')
+  </head>
+  <body class="login">
+
+    <div class="wrapper d-flex align-items-center flex-column justify-content-center h-100">
+
+      <img src="assets/images/logo-portal-permuta.png" class="img-fluid logo-login" alt="">
+      <h3 class="my-5 font-weight-bold">Bem vindo(a),</h3>
+      <img src="assets/images/img-perfil-login.png" class="img-fluid mb-2" alt="">
+      <p class="mb-5">João da Silva</p>
+
+      <p>Entrar como:</p>
+
+      <div class="row mb-5">
+        <div class="col-md-12 d-flex justify-content-center flex-column">
+          <button class="btn btn-log mb-3 position-relative">
+            Administração DDP
+            <div class="position-absolute icon">
+              <img src="assets/images/icon-hover-botao.png" class="img-fluid align-self-baseline" alt="">
+            </div>
+          </button>
+          <button class="btn btn-log mb-3">
+            Servidor Técnico-administrativo
+          </button>
+          <button class="btn btn-outraconta mb-3">
+            <img src="assets/images/icone-outra-conta.png" class="img-fluid" alt="">
+            Usar outra conta
+          </button>
+        </div>
+      </div>
+
+    </div>
+    
+    
+    @@include('./partials/footer.html')
+  </body>
+</html>
