@@ -20,7 +20,7 @@
     .icon {
       display: none;
       background-color: $verdeClaro;
-      width: 20%;
+      width: 15%;
       right: 0;
       top: 0px;
       height: 68px;
@@ -30,13 +30,12 @@
       img {
         margin-top: 20px;
         max-width: 25px;
-        margin-left: 15px;
+        
       }
     }
 
     &:hover {
       border-color: $verdeClaro;
-      text-indent: -40px;
 
       .icon {
         display: block;
@@ -47,5 +46,16 @@
   .btn-outraconta {
     height: 70px;
     background-color: rgba($color: #D7E3EF, $alpha: 0.78);
+
+    &:hover {
+      background-color: $azulEscuro;
+      color: white;
+
+      svg {
+        path {
+          fill: white;
+        }
+      }
+    }
   }
 }
