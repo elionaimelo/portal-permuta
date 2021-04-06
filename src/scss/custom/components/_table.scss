@@ -1,0 +1,30 @@
+.table-intencoes {
+ thead {
+     background-color: $corTxt;
+     color: #FFFFFF;
+     font-size: 15px;
+     font-weight: bold;
+ }
+ tbody {
+     color: $corTxt;
+     font-size: 14px;
+     font-weight: normal;
+     background-color: #FFFFFF;
+     tr {
+
+        td {
+            vertical-align: middle;
+        }
+        td:first-child {
+         font-weight: bold;
+        }
+        td:nth-child(2) {
+            width: 30%;
+        }
+     }
+     tr:nth-child(2n){
+        background-color: $bg2;
+     }
+     
+ }
+}
