@@ -4,6 +4,13 @@
      color: #FFFFFF;
      font-size: 15px;
      font-weight: bold;
+     th {
+        text-align: center;
+
+        &:nth-child(3) {
+            text-align: left;
+        }
+     }
  }
  tbody {
      color: $corTxt;
@@ -14,12 +21,18 @@
 
         td {
             vertical-align: middle;
+            text-align: center;
         }
         td:first-child {
          font-weight: bold;
         }
-        td:nth-child(2) {
+        td:nth-child(3) {
             width: 30%;
+            text-align: left;
+        }
+        td:last-child {
+            //padding-left: 1.5rem;
+            padding-right: 1.5rem;
         }
      }
      tr:nth-child(2n){
@@ -27,4 +40,41 @@
      }
      
  }
+}
+.filtragem-intencoes {
+    background-color: $corTxt;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    border-radius: .375rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+
+    p {
+        margin: 0 !important;
+    }
+}
+.pesquisa-intencoes {
+    background-color: $bg2;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: .375rem;
+
+    img {
+        padding: 1rem;
+    }
+    
+    input {
+        background-color: $bg2;
+        color: $corTxt;
+        font-size: 1rem;
+        font-weight: normal;
+        border: none;
+    }
 }
