@@ -31,7 +31,7 @@
             text-align: left;
         }
         td:last-child {
-            //padding-left: 1.5rem;
+            padding-left: 1.5rem;
             padding-right: 1.5rem;
         }
      }
@@ -77,4 +77,18 @@
         font-weight: normal;
         border: none;
     }
+}
+.listagem-ativo {
+    background-color: $verdeMuitoClaro;
+    color: $verdeClaro;
+    font-size: 0.9rem;
+    font-weight: normal;
+    padding: 0.5rem 1.5rem;
+}
+.listagem-inativo {
+    background-color: $laranjaClaro2;
+    color: $laranja2;
+    font-size: 0.9rem;
+    font-weight: normal;
+    padding: 0.5rem 1.5rem;
 }
