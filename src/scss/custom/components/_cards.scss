@@ -172,4 +172,35 @@
     background-color: #ffffff;
   }
 }
- 
+.card-mensagem {
+  h3 {
+    color: $corTxt;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .msg {
+    border-top: 1px solid #F9C69F;
+    //border-bottom: 1px solid #F9C69F;
+    padding: 1rem 0;
+
+    h4 {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    h5 {
+      font-size: 0.95rem;
+      font-weight: normal;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  button {
+    border: none;
+    background-color: #ffffff;
+    color: #F9C69F;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
