@@ -16,118 +16,120 @@
   <body>
     @@include('./partials/header.html')
 
-    <div class="container-fluid h-100 pt-5 pt-md-5 overflow-hidden">
+    <div class="container-fluid h-100 pt-5 pt-md-5">
       <div class="pt-4 mt-3 mt-md-0 h-100">
         <div class="row pt-5 pt-md-0 h-100">
           <div class="col-lg-2 d-none d-lg-block pl-0">
             @@include('./partials/sidebarDashboard.html')
           </div>
-          <div class="col main pt-5 pt-md-0 px-2 px-md-5 h-100">
-            <div class="row pt-5">
-              <div class="d-flex flex-row justify-content-between w-100">
-                <div class="filtragem-intencoes col-lg-2 col-3">
-                    <img src="assets/images/icon-filter.png" alt="">
-                    <p>FILTRO</p>
-                    <a href="#"><img src="assets/images/icon-arrow-down-branco.png" alt=""></a>
-                    
-                </div>
-                <div class="pesquisa-intencoes col-4">
-                    <img src="assets/images/icone-pesquisa.png" alt="">
-                    <input value="Pesquisar"></input>
+          <div class="content-inner">
+            <div class="col main pt-5 pt-md-0 px-2 px-md-5">
+              <div class="row pt-5">
+                <div class="d-flex flex-row justify-content-between w-100">
+                  <div class="filtragem-intencoes col-lg-2 col-3">
+                      <img src="assets/images/icon-filter.png" alt="">
+                      <p>FILTRO</p>
+                      <a href="#"><img src="assets/images/icon-arrow-down-branco.png" alt=""></a>
+                      
+                  </div>
+                  <div class="pesquisa-intencoes col-4">
+                      <img src="assets/images/icone-pesquisa.png" alt="">
+                      <input value="Pesquisar"></input>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row pt-5">
-              <div class="col px-0">
-                <table class="table table-intencoes" id="example">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th>Nome</th>
-                            <th>Cargo atual</th>
-                            <th>Tempo de cargo</th>
-                            <th>Unidade atual</th>
-                            <th>Unidade de intenção</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="pl-4">1</td>
-                            <td> <img src="assets/images/icon-avatar.png" alt=""> </td>
-                            <td>Maria José</td>
-                            <td>Diagramador</td>
-                            <td>4 anos e 2 meses</td>
-                            <td>SEDIS</td>
-                            <td>SINFO</td>
-                            <td><span class="badge listagem-ativo">Ativo</span></td>
-                        </tr>
-                        <tr>
-                            <td class="pl-4">2</td>
-                            <td> <img src="assets/images/icon-avatar.png" alt=""> </td>
-                            <td>Maria José</td>
-                            <td>Diagramador</td>
-                            <td>4 anos e 2 meses</td>
-                            <td>SEDIS</td>
-                            <td>SINFO</td>
-                            <td><span class="badge listagem-inativo">Inativo</span></td>
-                        </tr>
-                        <tr>
-                            <td class="pl-4">3</td>
-                            <td> <img src="assets/images/icon-avatar.png" alt=""> </td>
-                            <td>Maria José</td>
-                            <td>Diagramador</td>
-                            <td>4 anos e 2 meses</td>
-                            <td>SEDIS</td>
-                            <td>SINFO</td>
-                            <td><span class="badge listagem-ativo">Ativo</span></td>
-                        </tr>
-                        <tr>
-                            <td class="pl-4">4</td>
-                            <td> <img src="assets/images/icon-avatar.png" alt=""> </td>
-                            <td>Maria José</td>
-                            <td>Diagramador</td>
-                            <td>4 anos e 2 meses</td>
-                            <td>SEDIS</td>
-                            <td>SINFO</td>
-                            <td><span class="badge listagem-inativo">Inativo</span></td>
-                        </tr>
-                        <tr>
-                            <td class="pl-4">5</td>
-                            <td> <img src="assets/images/icon-avatar.png" alt=""> </td>
-                            <td>Maria José</td>
-                            <td>Diagramador</td>
-                            <td>4 anos e 2 meses</td>
-                            <td>SEDIS</td>
-                            <td>SINFO</td>
-                            <td><span class="badge listagem-ativo">Ativo</span></td>
-                        </tr>
-                        <tr>
-                            <td class="pl-4">6</td>
-                            <td><img src="assets/images/icon-avatar.png" alt=""></td>
-                            <td> Maria José</td>
-                            <td>Diagramador</td>
-                            <td>4 anos e 2 meses</td>
-                            <td>SEDIS</td>
-                            <td>SINFO</td>
-                            <td><span class="badge listagem-inativo">Inativo</span></td>
-                        </tr>
-                        <tr>
-                            <td class="pl-4">7</td>
-                            <td><img src="assets/images/icon-avatar.png" alt=""></td>
-                            <td>  Maria José</td>
-                            <td>Diagramador</td>
-                            <td>4 anos e 2 meses</td>
-                            <td>SEDIS</td>
-                            <td>SINFO</td>
-                            <td><span class="badge listagem-ativo">Ativo</span></td>
-                        </tr>
-                        
-                    </tbody>
-              </table>
+              <div class="row pt-5">
+                <div class="col px-0">
+                  <table class="table table-intencoes mb-5" id="example">
+                      <thead>
+                          <tr>
+                              <th></th>
+                              <th></th>
+                              <th>Nome</th>
+                              <th>Cargo atual</th>
+                              <th>Tempo de cargo</th>
+                              <th>Unidade atual</th>
+                              <th>Unidade de intenção</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td class="pl-4">1</td>
+                              <td> <img src="assets/images/icon-avatar.png" alt=""> </td>
+                              <td>Maria José</td>
+                              <td>Diagramador</td>
+                              <td>4 anos e 2 meses</td>
+                              <td>SEDIS</td>
+                              <td>SINFO</td>
+                              <td><span class="badge listagem-ativo">Ativo</span></td>
+                          </tr>
+                          <tr>
+                              <td class="pl-4">2</td>
+                              <td> <img src="assets/images/icon-avatar.png" alt=""> </td>
+                              <td>Maria José</td>
+                              <td>Diagramador</td>
+                              <td>4 anos e 2 meses</td>
+                              <td>SEDIS</td>
+                              <td>SINFO</td>
+                              <td><span class="badge listagem-inativo">Inativo</span></td>
+                          </tr>
+                          <tr>
+                              <td class="pl-4">3</td>
+                              <td> <img src="assets/images/icon-avatar.png" alt=""> </td>
+                              <td>Maria José</td>
+                              <td>Diagramador</td>
+                              <td>4 anos e 2 meses</td>
+                              <td>SEDIS</td>
+                              <td>SINFO</td>
+                              <td><span class="badge listagem-ativo">Ativo</span></td>
+                          </tr>
+                          <tr>
+                              <td class="pl-4">4</td>
+                              <td> <img src="assets/images/icon-avatar.png" alt=""> </td>
+                              <td>Maria José</td>
+                              <td>Diagramador</td>
+                              <td>4 anos e 2 meses</td>
+                              <td>SEDIS</td>
+                              <td>SINFO</td>
+                              <td><span class="badge listagem-inativo">Inativo</span></td>
+                          </tr>
+                          <tr>
+                              <td class="pl-4">5</td>
+                              <td> <img src="assets/images/icon-avatar.png" alt=""> </td>
+                              <td>Maria José</td>
+                              <td>Diagramador</td>
+                              <td>4 anos e 2 meses</td>
+                              <td>SEDIS</td>
+                              <td>SINFO</td>
+                              <td><span class="badge listagem-ativo">Ativo</span></td>
+                          </tr>
+                          <tr>
+                              <td class="pl-4">6</td>
+                              <td><img src="assets/images/icon-avatar.png" alt=""></td>
+                              <td> Maria José</td>
+                              <td>Diagramador</td>
+                              <td>4 anos e 2 meses</td>
+                              <td>SEDIS</td>
+                              <td>SINFO</td>
+                              <td><span class="badge listagem-inativo">Inativo</span></td>
+                          </tr>
+                          <tr>
+                              <td class="pl-4">7</td>
+                              <td><img src="assets/images/icon-avatar.png" alt=""></td>
+                              <td>  Maria José</td>
+                              <td>Diagramador</td>
+                              <td>4 anos e 2 meses</td>
+                              <td>SEDIS</td>
+                              <td>SINFO</td>
+                              <td><span class="badge listagem-ativo">Ativo</span></td>
+                          </tr>
+                          
+                      </tbody>
+                </table>
+                </div>
+                
               </div>
-              
             </div>
           </div>
         </div>
