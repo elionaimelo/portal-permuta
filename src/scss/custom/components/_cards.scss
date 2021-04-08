@@ -140,5 +140,36 @@
     }
     
 }
+.card-agenda {
+  h4 {
+    font-size: .875rem;
+    margin: 0;
+    font-weight: bold;
+  }
+  h5 {
+    font-size: .813rem;
+    margin: 0;
+  }
+  .agenda {
+    background-color: #F6F6F6;
+    margin: 1rem 0;
 
+    div:last-child {
+      max-width: 60%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  button {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: .375rem;
+    color: #F9C69F;
+    border: 1px solid #F9C69F;
+    background-color: #ffffff;
+  }
+}
  
