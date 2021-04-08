@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suporte | Portal permuta progesp</title>
+    <!-- App css -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    @@include('./partials/favicons.html')
+  </head>
+  <body>
+    @@include('./partials/header.html')
+
+    <div class="container-fluid h-100 pt-5 pt-md-5">
+      <div class="pt-4 mt-3 mt-md-0 h-100">
+        <div class="row pt-5 pt-md-0 h-100">
+          @@include('./partials/sidebarDashboard.html')
+
+          <div class="content-inner">
+            <div class="col-lg-12 main pt-5 pt-md-0 px-2 px-md-5">
+              <div class="row py-5">
+                <div class="d-flex ml-3 flex-row justify-content-between w-100">
+                  <div class="pesquisa-intencoes col-4">
+                    <img src="assets/images/icone-pesquisa.png" alt="" />
+                    <input value="Pesquisar" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="chamado px-4 py-3 rounded mb-3">
+                    <p class="text-right mb-0 dia">Ontem</p>
+                    <div>
+                      <h6>Realizei o match mas foi recusado pelo DDP</h6>
+                      <p class="assunto mb-0 p-2">
+                        Problema na realização do match
+                      </p>
+                    </div>
+                  </div>
+                  <div class="chamado px-4 py-3 rounded mb-3">
+                    <p class="text-right mb-0 dia">Ontem</p>
+                    <div>
+                      <h6>Realizei o match mas foi recusado pelo DDP</h6>
+                      <p class="assunto mb-0 p-2">
+                        Problema na realização do match
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="resposta-chamado bg-white rounded px-4 py-3">
+                    <header class="d-flex justify-content-between">
+                      <div class="perfil">
+                        <img
+                          src="assets/images/pic-profile.png"
+                          class="img-fluid mr-3"
+                          alt=""
+                        />
+                        Maria José
+                      </div>
+                      <img
+                        src="assets/images/icon-printer.png"
+                        class="img-fluid align-self-baseline"
+                        alt=""
+                      />
+                    </header>
+                    <div>
+                      <div class="data my-2">Quinta, 04/03/2021</div>
+                      <h5 class="my-3">
+                        Realizei o match mas foi recusado pelo DDP
+                      </h5>
+                      <p class="assunto mb-0 p-2">
+                        Problema na realização do match
+                      </p>
+                      <p class="mt-4 mb-2">
+                        pNullam pretium, dolor eget molestie aliquam, est nunc
+                        congue lectus, vel tristique nulla est ullamcorper ex.
+                        Donec sed mi mollis, sollicitudin metus nec, fermentum
+                        libero. Suspendisse quis luctus tellus. Nullam eget odio
+                        id velit vulputate aliquam. In eget sapien et ante
+                        congue consectetur id id sem. Cras vel finibus dui, ut
+                        facilisis orci. Fusce imperdiet, nunc vel volutpat
+                        ultrices, elit augue tempus tellus, ac posuere velit
+                        nulla in mauris. Curabitur hendrerit molestie facilisis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('./partials/footer.html')
+  </body>
+</html>
