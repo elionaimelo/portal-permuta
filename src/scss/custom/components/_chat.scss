@@ -1,3 +1,4 @@
+
 .chat {
 
 
@@ -395,6 +396,19 @@
     overflow-y: scroll;
     overflow-x: hidden;
   }
+   button {
+    width: 100%;
+    cursor: pointer;
+    border:none;
+    background-color: white;
+    text-align: left;
+  }
+
+  #frame #sidepanel #contacts button.active {
+    background-color: $laranjaClaro2;
+
+  }
+
   @media screen and (max-width: 735px) {
     #frame #sidepanel #contacts {
       height: calc(100% - 149px);
@@ -430,6 +444,7 @@
       padding: 6px 0 46px 8px;
     }
   }
+
   /* #frame #sidepanel #contacts ul li.contact:hover {
     background: $laranjaClaro3;
   } */
@@ -616,9 +631,8 @@
     color: #435f7a;
   }
   #frame .content .messages {
-    height: auto;
-    // min-height: calc(100% - 93px);
-    max-height: calc(100% - 125px);
+    height: 654px;
+    max-height: calc(135% - 154px);
     overflow-y: scroll;
     overflow-x: hidden;
     width: 100%;
