@@ -3,3 +3,16 @@
     max-width: 1140px;
   }
 }
+@media screen and (min-width: 1575px) {
+  .table-infos tbody {
+      font-size: 0.95rem;
+  }
+  .table-permutas {
+      thead  {
+          font-size: 0.95rem;
+      }
+      tbody {
+          font-size: 0.875rem;
+      }
+  }
+}
